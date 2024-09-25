@@ -1,0 +1,2 @@
+待更新，点击后返回选项。;
+choose: (check_blank==0)->调查空白墙:002_check_blank.txt|(check_charon==0)->调查左侧门:002_check_charon.txt|(check_eroc==0)->调查四扇门:002_check_eroc.txt|(check_toto==0)->调查右侧门:002_check_toto.txt|(checks==4)->调查结束:003_check_end.txt;

@@ -1,0 +1,30 @@
+miniAvatar: none;
+: 我走到空白的墙面，伸手摸了一下墙。;
+miniAvatar: miniAvatar/Hestia.png;
+赫斯提亚: （好凉……感觉温度比室内要低。）;
+miniAvatar: none;
+: 我又试着敲了敲墙面，然而并没有发出声音。;
+miniAvatar: miniAvatar/Hestia.png;
+赫斯提亚: （这到底是用什么材质做的？）;
+miniAvatar: none;
+: 我再次伸出手，回想了一下探测魔法的用法，很快手上便出现了白色的光点。;
+miniAvatar: miniAvatar/Hestia.png;
+赫斯提亚: （好，看来我还能正常使用魔法，用这个应该能找到一点线索。）;
+miniAvatar: none;
+: 但很快我的期待就落空了，即使用魔法也检查不出墙的材质，也探测不到墙后的状态。;
+: 我加强了魔法的力度，往墙上砸出了几道光波，但墙面连一点痕迹都没留下。;
+miniAvatar: miniAvatar/Hestia.png;
+赫斯提亚: （还以为能发现什么线索，反而是越查越搞不明白了。）;
+赫斯提亚: （话说回来，明明别的墙都有门，为什么只有这面墙是空着的？）;
+miniAvatar: none;
+: 我往后退了几步，再次审视眼前空荡荡的墙面。;
+: 我隐约觉得这里原本是有什么东西的，但显然那个东西现在消失了。;
+miniAvatar: miniAvatar/Hestia.png;
+赫斯提亚: （简直就像我的记忆一样，这会和我的失忆有什么关系吗？）;
+赫斯提亚: （不行，完全想不起来。）;
+赫斯提亚: （看来这里已经没有更多线索了，去其他地方看看吧。）;
+;
+setVar: check_blank=1; // 调查空白墙结束
+setVar: checks=checks + 1; // 调查次数+1
+;
+choose: (check_blank==0)->调查空白墙:002_check_blank.txt|(check_charon==0)->调查左侧门:002_check_charon.txt|(check_eroc==0)->调查四扇门:002_check_eroc.txt|(check_toto==0)->调查右侧门:002_check_toto.txt|(checks==4)->调查结束:003_check_end.txt;
