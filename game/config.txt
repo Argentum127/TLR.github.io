@@ -1,7 +1,0 @@
-Game_name:不XX就出不去的房间;
-Game_key:17386d02cbf8066;
-Title_img:title_sample.png;
-Title_bgm:;
-Textbox_theme:standard;
-Game_Logo:;
-Package_name:;
